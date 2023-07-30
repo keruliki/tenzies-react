@@ -53,7 +53,7 @@ function App() {
     setTenzies(false);
   }
 
-  function holdDice(id) {
+  function holdDice(id: string) {
     setDice((oldDice) =>
       oldDice.map((die) => {
         return die.id === id ? { ...die, isHeld: !die.isHeld } : die;

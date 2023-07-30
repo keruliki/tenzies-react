@@ -1,6 +1,11 @@
 import "./App.css";
 
-function Die(props) {
+function Die(props: {
+  value: number;
+  isHeld: boolean;
+  holdDice: () => void;
+  }
+  ) {
   const styles = {
     backgroundColor: props.isHeld ? "green" : "white",
   };
